@@ -1,0 +1,11 @@
+C:\Users\Administrator\Downloads\repos\SIGID\SIGID.Core.Domain\bin\Debug\net8.0\SIGID.Core.Domain.deps.json
+C:\Users\Administrator\Downloads\repos\SIGID\SIGID.Core.Domain\bin\Debug\net8.0\SIGID.Core.Domain.dll
+C:\Users\Administrator\Downloads\repos\SIGID\SIGID.Core.Domain\bin\Debug\net8.0\SIGID.Core.Domain.pdb
+C:\Users\Administrator\Downloads\repos\SIGID\SIGID.Core.Domain\obj\Debug\net8.0\SIGID.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Downloads\repos\SIGID\SIGID.Core.Domain\obj\Debug\net8.0\SIGID.Core.Domain.AssemblyInfoInputs.cache
+C:\Users\Administrator\Downloads\repos\SIGID\SIGID.Core.Domain\obj\Debug\net8.0\SIGID.Core.Domain.AssemblyInfo.cs
+C:\Users\Administrator\Downloads\repos\SIGID\SIGID.Core.Domain\obj\Debug\net8.0\SIGID.Core.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\repos\SIGID\SIGID.Core.Domain\obj\Debug\net8.0\SIGID.Core.Domain.dll
+C:\Users\Administrator\Downloads\repos\SIGID\SIGID.Core.Domain\obj\Debug\net8.0\refint\SIGID.Core.Domain.dll
+C:\Users\Administrator\Downloads\repos\SIGID\SIGID.Core.Domain\obj\Debug\net8.0\SIGID.Core.Domain.pdb
+C:\Users\Administrator\Downloads\repos\SIGID\SIGID.Core.Domain\obj\Debug\net8.0\ref\SIGID.Core.Domain.dll
