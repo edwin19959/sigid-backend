@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿//task80_edelacruz: Estructura de base de datos para usuarios de SIGID
+using Microsoft.AspNetCore.Identity;
 using SIGID.Core.Application.Enums;
 using SIGID.Infrastructure.Identity.Entities;
 using System;
@@ -14,25 +15,30 @@ namespace SIGID.Infrastructure.Identity.Seeds
     {
         public static async Task SeedAsync(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
-            ApplicationUser defaultUser = new();
-            defaultUser.UserName = "adminuser";
-            defaultUser.Email = "adminuser@email.com";
-            defaultUser.Name = "John";
-            defaultUser.LastName = "Doe";
-            defaultUser.EmailConfirmed = true;
-            defaultUser.IdentificationNumber = "001-2345678-9";
-            defaultUser.PhoneNumberConfirmed = true;
+            //task80_edelacruz: Usuario administrador por defecto (admin@sigid.com)
+            ApplicationUser defaultUser = new()
+            {
+                UserName = "admin",
+                Email = "admin@sigid.com",
+                Name = "Admin",
+                LastName = "SIGID",
+                EmailConfirmed = true,
+                IdentificationNumber = "000-0000000-0",
+                PhoneNumberConfirmed = true,
+                IsActive = true
+            };
 
             if (userManager.Users.All(u => u.Id != defaultUser.Id))
             {
                 var user = await userManager.FindByEmailAsync(defaultUser.Email);
                 if (user == null)
                 {
-                    await userManager.CreateAsync(defaultUser, "123Pa$$word!");
-                    await userManager.AddToRoleAsync(defaultUser, Roles.Employed.ToString());
+                    await userManager.CreateAsync(defaultUser, "Admin123!");
                     await userManager.AddToRoleAsync(defaultUser, Roles.Admin.ToString());
                 }
             }
+            //task80_edelacruz: Fin usuario administrador por defecto
         }
     }
 }
+//task80_edelacruz: Fin estructura de base de datos para usuarios de SIGID

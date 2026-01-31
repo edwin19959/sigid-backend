@@ -1,12 +1,14 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿//task80_edelacruz: Estructura de base de datos para usuarios de SIGID
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using SIGID.Core.Application.DTO.Account;
+using SIGID.Core.Application.Enums;
 using SIGID.Core.Application.Interfaces.Services;
 using SIGID.Infrastructure.Identity.Entities;
 using System.IdentityModel.Tokens.Jwt;
-using System.Numerics;
 using System.Security.Claims;
 using System.Text;
 
@@ -78,11 +80,143 @@ namespace SIGID.Infrastructure.Identity.Services
             return response;
         }
 
-        public Task<RegisterResponseDTO> RegisterUserAsync(RegisterRequestDTO request, string origin)
+        //task80_edelacruz: Implementacion de registro de usuarios en el sistema
+        public async Task<RegisterResponseDTO> RegisterUserAsync(RegisterRequestDTO request, string origin)
         {
-            //pending other developer implement
-            throw new NotImplementedException();
+            RegisterResponseDTO response = new();
+
+            // Validate passwords match
+            if (request.Password != request.ConfirmPassword)
+            {
+                response.HasError = true;
+                response.Error = "Las contraseñas no coinciden.";
+                return response;
+            }
+
+            // Check if email already exists
+            var existingUser = await _userManager.FindByEmailAsync(request.Email);
+            if (existingUser != null)
+            {
+                response.HasError = true;
+                response.Error = $"El email '{request.Email}' ya está registrado.";
+                return response;
+            }
+
+            // Validate the role exists
+            var validRoles = Enum.GetNames(typeof(Roles));
+            if (!validRoles.Contains(request.Role, StringComparer.OrdinalIgnoreCase))
+            {
+                response.HasError = true;
+                response.Error = $"El rol '{request.Role}' no es válido. Roles disponibles: {string.Join(", ", validRoles)}";
+                return response;
+            }
+
+            // Create new user
+            var newUser = new ApplicationUser
+            {
+                UserName = request.Email,
+                Email = request.Email,
+                Name = request.Name,
+                LastName = request.LastName,
+                IdentificationNumber = request.IdentificationNumber,
+                EmailConfirmed = true, // Auto-confirm for now
+                IsActive = true,
+                CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow
+            };
+
+            var result = await _userManager.CreateAsync(newUser, request.Password);
+
+            if (!result.Succeeded)
+            {
+                response.HasError = true;
+                response.Error = string.Join(", ", result.Errors.Select(e => e.Description));
+                return response;
+            }
+
+            // Assign role to user
+            await _userManager.AddToRoleAsync(newUser, request.Role);
+
+            // Map response
+            response.Id = newUser.Id;
+            response.Name = newUser.Name;
+            response.LastName = newUser.LastName;
+            response.Email = newUser.Email!;
+            response.Role = request.Role;
+            response.IsActive = newUser.IsActive;
+            response.IdentificationNumber = newUser.IdentificationNumber;
+            response.HasError = false;
+
+            return response;
         }
+        //task80_edelacruz: Fin implementacion registro de usuarios
+
+        //task80_edelacruz: Implementacion de consulta de usuarios
+        public async Task<List<UserDTO>> GetAllUsersAsync()
+        {
+            var users = await _userManager.Users.ToListAsync();
+            var userDTOs = new List<UserDTO>();
+
+            foreach (var user in users)
+            {
+                var roles = await _userManager.GetRolesAsync(user);
+                userDTOs.Add(new UserDTO
+                {
+                    Id = user.Id,
+                    Name = user.Name,
+                    LastName = user.LastName,
+                    Email = user.Email ?? string.Empty,
+                    IdentificationNumber = user.IdentificationNumber,
+                    Roles = roles.ToList(),
+                    IsActive = user.IsActive,
+                    CreatedAt = user.CreatedAt,
+                    UpdatedAt = user.UpdatedAt
+                });
+            }
+
+            return userDTOs;
+        }
+
+        public async Task<UserDTO?> GetUserByIdAsync(string id)
+        {
+            var user = await _userManager.FindByIdAsync(id);
+            if (user == null) return null;
+
+            var roles = await _userManager.GetRolesAsync(user);
+            return new UserDTO
+            {
+                Id = user.Id,
+                Name = user.Name,
+                LastName = user.LastName,
+                Email = user.Email ?? string.Empty,
+                IdentificationNumber = user.IdentificationNumber,
+                Roles = roles.ToList(),
+                IsActive = user.IsActive,
+                CreatedAt = user.CreatedAt,
+                UpdatedAt = user.UpdatedAt
+            };
+        }
+
+        public async Task<UserDTO?> GetUserByEmailAsync(string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null) return null;
+
+            var roles = await _userManager.GetRolesAsync(user);
+            return new UserDTO
+            {
+                Id = user.Id,
+                Name = user.Name,
+                LastName = user.LastName,
+                Email = user.Email ?? string.Empty,
+                IdentificationNumber = user.IdentificationNumber,
+                Roles = roles.ToList(),
+                IsActive = user.IsActive,
+                CreatedAt = user.CreatedAt,
+                UpdatedAt = user.UpdatedAt
+            };
+        }
+        //task80_edelacruz: Fin implementacion consulta de usuarios
 
         //this method works for reset password in case an user on the lab lost his account access
         public async Task<ResetPasswordResponseDTO> ResetPasswordAsync(ResetPasswordRequestDTO request)
@@ -121,7 +255,7 @@ namespace SIGID.Infrastructure.Identity.Services
         {
             var claims = new List<Claim>
             {
-                new Claim("email", user.Email),
+                new Claim("email", user.Email!),
                 new Claim("id", user.Id)
             };
 

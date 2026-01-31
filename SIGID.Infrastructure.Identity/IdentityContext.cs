@@ -25,9 +25,11 @@ namespace SIGID.Infrastructure.Identity
             builder.Entity<ApplicationUser>(entity =>
             {
                 entity.ToTable(name: "Users");
-                entity.Property(u => u.Name).IsRequired().HasMaxLength(100);
-                entity.Property(u => u.LastName).IsRequired().HasMaxLength(100);
+                entity.Property(u => u.Name).IsRequired().HasMaxLength(100).HasColumnType("nvarchar(max)");
+                entity.Property(u => u.LastName).IsRequired().HasMaxLength(100).HasColumnType("nvarchar(max)");
                 entity.Property(u => u.IdentificationNumber).IsRequired().HasMaxLength(20);
+                entity.Property(u => u.Email).HasMaxLength(256).IsRequired(false);
+                entity.HasIndex(u => u.NormalizedEmail).HasDatabaseName("EmailIndex");
             });
 
             builder.Entity<IdentityRole>(entity =>
