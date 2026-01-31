@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\edelacruz\\source\\repos\\SIGID\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{17F0223F-DAC2-E3D3-3C84-EA51BE809944}|SIGID.Infrastructure.Identity\\SIGID.Infrastructure.Identity.csproj|c:\\users\\edelacruz\\source\\repos\\sigid\\sigid.infrastructure.identity\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17F0223F-DAC2-E3D3-3C84-EA51BE809944}|SIGID.Infrastructure.Identity\\SIGID.Infrastructure.Identity.csproj|solutionrelative:sigid.infrastructure.identity\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17F0223F-DAC2-E3D3-3C84-EA51BE809944}|SIGID.Infrastructure.Identity\\SIGID.Infrastructure.Identity.csproj|c:\\users\\edelacruz\\source\\repos\\sigid\\sigid.infrastructure.identity\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17F0223F-DAC2-E3D3-3C84-EA51BE809944}|SIGID.Infrastructure.Identity\\SIGID.Infrastructure.Identity.csproj|solutionrelative:sigid.infrastructure.identity\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BA652B5-D9BA-8B0E-FAD1-32E4CAA3A740}|SIGID.API\\SIGID.API.csproj|c:\\users\\edelacruz\\source\\repos\\sigid\\sigid.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3BA652B5-D9BA-8B0E-FAD1-32E4CAA3A740}|SIGID.API\\SIGID.API.csproj|solutionrelative:sigid.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BA652B5-D9BA-8B0E-FAD1-32E4CAA3A740}|SIGID.API\\SIGID.API.csproj|c:\\users\\edelacruz\\source\\repos\\sigid\\sigid.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3BA652B5-D9BA-8B0E-FAD1-32E4CAA3A740}|SIGID.API\\SIGID.API.csproj|solutionrelative:sigid.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17F0223F-DAC2-E3D3-3C84-EA51BE809944}|SIGID.Infrastructure.Identity\\SIGID.Infrastructure.Identity.csproj|c:\\users\\edelacruz\\source\\repos\\sigid\\sigid.infrastructure.identity\\serviceregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17F0223F-DAC2-E3D3-3C84-EA51BE809944}|SIGID.Infrastructure.Identity\\SIGID.Infrastructure.Identity.csproj|solutionrelative:sigid.infrastructure.identity\\serviceregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1C929FF-957F-453D-B42B-32EEF305BC95}|SIGID.Infrastructure.Persistence\\SIGID.Infrastructure.Persistence.csproj|c:\\users\\edelacruz\\source\\repos\\sigid\\sigid.infrastructure.persistence\\sigid.infrastructure.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F1C929FF-957F-453D-B42B-32EEF305BC95}|SIGID.Infrastructure.Persistence\\SIGID.Infrastructure.Persistence.csproj|solutionrelative:sigid.infrastructure.persistence\\sigid.infrastructure.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BA652B5-D9BA-8B0E-FAD1-32E4CAA3A740}|SIGID.API\\SIGID.API.csproj|c:\\users\\edelacruz\\source\\repos\\sigid\\sigid.api\\sigid.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3BA652B5-D9BA-8B0E-FAD1-32E4CAA3A740}|SIGID.API\\SIGID.API.csproj|solutionrelative:sigid.api\\sigid.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17F0223F-DAC2-E3D3-3C84-EA51BE809944}|SIGID.Infrastructure.Identity\\SIGID.Infrastructure.Identity.csproj|c:\\users\\edelacruz\\source\\repos\\sigid\\sigid.infrastructure.identity\\identityseedregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17F0223F-DAC2-E3D3-3C84-EA51BE809944}|SIGID.Infrastructure.Identity\\SIGID.Infrastructure.Identity.csproj|solutionrelative:sigid.infrastructure.identity\\identityseedregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BA652B5-D9BA-8B0E-FAD1-32E4CAA3A740}|SIGID.API\\SIGID.API.csproj|c:\\users\\edelacruz\\source\\repos\\sigid\\sigid.api\\sigid.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{3BA652B5-D9BA-8B0E-FAD1-32E4CAA3A740}|SIGID.API\\SIGID.API.csproj|solutionrelative:sigid.api\\sigid.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\edelacruz\\source\\repos\\SIGID\\SIGID.Infrastructure.Identity\\Entities\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "SIGID.Infrastructure.Identity\\Entities\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\edelacruz\\source\\repos\\SIGID\\SIGID.Infrastructure.Identity\\Entities\\ApplicationUser.cs",
+              "RelativeToolTip": "SIGID.Infrastructure.Identity\\Entities\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T01:37:34.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\edelacruz\\source\\repos\\SIGID\\SIGID.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "SIGID.API\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\edelacruz\\source\\repos\\SIGID\\SIGID.API\\appsettings.Development.json",
+              "RelativeToolTip": "SIGID.API\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-31T01:23:54.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ServiceRegister.cs",
+              "DocumentMoniker": "C:\\Users\\edelacruz\\source\\repos\\SIGID\\SIGID.Infrastructure.Identity\\ServiceRegister.cs",
+              "RelativeDocumentMoniker": "SIGID.Infrastructure.Identity\\ServiceRegister.cs",
+              "ToolTip": "C:\\Users\\edelacruz\\source\\repos\\SIGID\\SIGID.Infrastructure.Identity\\ServiceRegister.cs",
+              "RelativeToolTip": "SIGID.Infrastructure.Identity\\ServiceRegister.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T01:20:38.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\edelacruz\\source\\repos\\SIGID\\SIGID.API\\appsettings.json",
+              "RelativeDocumentMoniker": "SIGID.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\edelacruz\\source\\repos\\SIGID\\SIGID.API\\appsettings.json",
+              "RelativeToolTip": "SIGID.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-31T00:53:11.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IdentityContext.cs",
+              "DocumentMoniker": "C:\\Users\\edelacruz\\source\\repos\\SIGID\\SIGID.Infrastructure.Identity\\IdentityContext.cs",
+              "RelativeDocumentMoniker": "SIGID.Infrastructure.Identity\\IdentityContext.cs",
+              "ToolTip": "C:\\Users\\edelacruz\\source\\repos\\SIGID\\SIGID.Infrastructure.Identity\\IdentityContext.cs",
+              "RelativeToolTip": "SIGID.Infrastructure.Identity\\IdentityContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAIA2wBUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T00:41:55.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SIGID.Infrastructure.Persistence",
+              "DocumentMoniker": "C:\\Users\\edelacruz\\Source\\Repos\\SIGID\\SIGID.Infrastructure.Persistence\\SIGID.Infrastructure.Persistence.csproj",
+              "RelativeDocumentMoniker": "SIGID.Infrastructure.Persistence\\SIGID.Infrastructure.Persistence.csproj",
+              "ToolTip": "C:\\Users\\edelacruz\\Source\\Repos\\SIGID\\SIGID.Infrastructure.Persistence\\SIGID.Infrastructure.Persistence.csproj",
+              "RelativeToolTip": "SIGID.Infrastructure.Persistence\\SIGID.Infrastructure.Persistence.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-31T00:41:57.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IdentitySeedRegister.cs",
+              "DocumentMoniker": "C:\\Users\\edelacruz\\source\\repos\\SIGID\\SIGID.Infrastructure.Identity\\IdentitySeedRegister.cs",
+              "RelativeDocumentMoniker": "SIGID.Infrastructure.Identity\\IdentitySeedRegister.cs",
+              "ToolTip": "C:\\Users\\edelacruz\\source\\repos\\SIGID\\SIGID.Infrastructure.Identity\\IdentitySeedRegister.cs",
+              "RelativeToolTip": "SIGID.Infrastructure.Identity\\IdentitySeedRegister.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T00:41:56.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SIGID.API.http",
+              "DocumentMoniker": "C:\\Users\\edelacruz\\source\\repos\\SIGID\\SIGID.API\\SIGID.API.http",
+              "RelativeDocumentMoniker": "SIGID.API\\SIGID.API.http",
+              "ToolTip": "C:\\Users\\edelacruz\\source\\repos\\SIGID\\SIGID.API\\SIGID.API.http",
+              "RelativeToolTip": "SIGID.API\\SIGID.API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-01-31T00:41:05.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SIGID.API",
+              "DocumentMoniker": "C:\\Users\\edelacruz\\Source\\Repos\\SIGID\\SIGID.API\\SIGID.API.csproj",
+              "RelativeDocumentMoniker": "SIGID.API\\SIGID.API.csproj",
+              "ToolTip": "C:\\Users\\edelacruz\\Source\\Repos\\SIGID\\SIGID.API\\SIGID.API.csproj",
+              "RelativeToolTip": "SIGID.API\\SIGID.API.csproj",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-31T00:40:06.28Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
