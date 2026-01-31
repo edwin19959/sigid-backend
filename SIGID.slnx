@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/API/">
+    <Project Path="SIGID.API/SIGID.API.csproj" />
+  </Folder>
+  <Folder Name="/Core/">
+    <Project Path="SIGID.Core.Application/SIGID.Core.Application.csproj" />
+    <Project Path="SIGID.Core.Domain/SIGID.Core.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="SIGID.Infrastructure.Identity/SIGID.Infrastructure.Identity.csproj" />
+    <Project Path="SIGID.Infrastructure.Persistence/SIGID.Infrastructure.Persistence.csproj" Id="f1c929ff-957f-453d-b42b-32eef305bc95" />
+  </Folder>
+</Solution>
