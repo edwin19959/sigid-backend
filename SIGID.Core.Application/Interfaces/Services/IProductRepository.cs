@@ -6,6 +6,11 @@ namespace SIGID.Core.Application.Interfaces.Services
 {
     public interface IProductRepository
     {
-        Task<List<Product>> GetAllAsync();
+       
+        Task<int> GetTotalProductsAsync();
+        Task<int> GetTotalStockValueAsync();
+        Task<int> GetLowStockCountAsync();
+        Task<List<Product>> GetProductsWithLowStockAsync();
+
     }
 }
