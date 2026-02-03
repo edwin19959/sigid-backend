@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿//task80_edelacruz: Estructura de base de datos para usuarios de SIGID
+using Microsoft.AspNetCore.Identity;
 using SIGID.Core.Application.Enums;
 using SIGID.Infrastructure.Identity.Entities;
 using System;
@@ -13,14 +14,18 @@ namespace SIGID.Infrastructure.Identity.Seeds
     {
         public static async Task SeedAsync(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
-            ApplicationUser defaultUser = new();
-            defaultUser.UserName = "employeduser";
-            defaultUser.Email = "employeduser@email.com";
-            defaultUser.Name = "Juan";
-            defaultUser.LastName = "Due";
-            defaultUser.EmailConfirmed = true;
-            defaultUser.IdentificationNumber = "002-1345678-9";
-            defaultUser.PhoneNumberConfirmed = true;
+            //task80_edelacruz: Correccion de inicializador de objeto para propiedades required
+            ApplicationUser defaultUser = new()
+            {
+                UserName = "employeduser",
+                Email = "employeduser@email.com",
+                Name = "Juan",
+                LastName = "Due",
+                EmailConfirmed = true,
+                IdentificationNumber = "002-1345678-9",
+                PhoneNumberConfirmed = true
+            };
+            //task80_edelacruz: Fin correccion
 
             if (userManager.Users.All(u => u.Id != defaultUser.Id))
             {

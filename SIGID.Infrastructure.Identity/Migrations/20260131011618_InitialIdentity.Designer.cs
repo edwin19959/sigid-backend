@@ -12,8 +12,8 @@ using SIGID.Infrastructure.Identity;
 namespace SIGID.Infrastructure.Identity.Migrations
 {
     [DbContext(typeof(IdentityContext))]
-    [Migration("20260129084614_InitialIdentityMigration")]
-    partial class InitialIdentityMigration
+    [Migration("20260131011618_InitialIdentity")]
+    partial class InitialIdentity
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -5,16 +5,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//task80_edelacruz: Estructura de base de datos para usuarios de SIGID
 namespace SIGID.Core.Application.Interfaces.Services
 {
     public interface IAccountService
     {
         Task<LoginResponseDTO> LoginAsync(LoginRequestDTO request);
         Task<string> ConfirmAccountAsync(string userId, string token);
-
-        //maybe in the future can be used
-        //Task<ForgotPasswordResponse> ForgotPasswordAsync(ForgotPasswordRequest request, string origin);
         Task<RegisterResponseDTO> RegisterUserAsync(RegisterRequestDTO request, string origin);
         Task<ResetPasswordResponseDTO> ResetPasswordAsync(ResetPasswordRequestDTO request);
+        
+        //task80_edelacruz: Metodos para consulta de usuarios
+        Task<List<UserDTO>> GetAllUsersAsync();
+        Task<UserDTO?> GetUserByIdAsync(string id);
+        Task<UserDTO?> GetUserByEmailAsync(string email);
+        //task80_edelacruz: Fin metodos consulta usuarios
     }
 }

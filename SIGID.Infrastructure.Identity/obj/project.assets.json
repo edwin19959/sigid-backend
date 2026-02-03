@@ -4286,23 +4286,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "C:\\Users\\edelacruz\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Downloads\\repos\\SIGID\\SIGID.Infrastructure.Identity\\SIGID.Infrastructure.Identity.csproj",
+      "projectUniqueName": "C:\\Users\\edelacruz\\Source\\Repos\\SIGID\\SIGID.Infrastructure.Identity\\SIGID.Infrastructure.Identity.csproj",
       "projectName": "SIGID.Infrastructure.Identity",
-      "projectPath": "C:\\Users\\Administrator\\Downloads\\repos\\SIGID\\SIGID.Infrastructure.Identity\\SIGID.Infrastructure.Identity.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Downloads\\repos\\SIGID\\SIGID.Infrastructure.Identity\\obj\\",
+      "projectPath": "C:\\Users\\edelacruz\\Source\\Repos\\SIGID\\SIGID.Infrastructure.Identity\\SIGID.Infrastructure.Identity.csproj",
+      "packagesPath": "C:\\Users\\edelacruz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\edelacruz\\Source\\Repos\\SIGID\\SIGID.Infrastructure.Identity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\edelacruz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4317,8 +4317,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Administrator\\Downloads\\repos\\SIGID\\SIGID.Core.Application\\SIGID.Core.Application.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Downloads\\repos\\SIGID\\SIGID.Core.Application\\SIGID.Core.Application.csproj"
+            "C:\\Users\\edelacruz\\Source\\Repos\\SIGID\\SIGID.Core.Application\\SIGID.Core.Application.csproj": {
+              "projectPath": "C:\\Users\\edelacruz\\Source\\Repos\\SIGID\\SIGID.Core.Application\\SIGID.Core.Application.csproj"
             }
           }
         }
@@ -4333,7 +4333,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -4377,7 +4377,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

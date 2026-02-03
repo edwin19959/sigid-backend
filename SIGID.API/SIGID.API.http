@@ -1,6 +1,53 @@
-@SIGID.API_HostAddress = http://localhost:5030
+@SIGID.API_HostAddress = https://localhost:7001
 
-GET {{SIGID.API_HostAddress}}/weatherforecast/
+### ============================================
+### AUTH ENDPOINTS - SIGID API
+### ============================================
+
+### 1. LOGIN - Authenticate with default admin user
+POST {{SIGID.API_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "admin@sigid.com",
+    "password": "Admin123!"
+}
+
+###
+
+### 2. REGISTER - Create a new user
+POST {{SIGID.API_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "Maria",
+    "lastName": "Garcia",
+    "email": "maria.garcia@sigid.com",
+    "role": "Employed",
+    "identificationNumber": "003-1234567-8",
+    "password": "Maria123!",
+    "confirmPassword": "Maria123!"
+}
+
+###
+
+### 3. GET ALL USERS - List all users in the system
+GET {{SIGID.API_HostAddress}}/api/auth/users
 Accept: application/json
+
+###
+
+### 4. GET USER BY ID - Get a specific user by ID
+### Replace {user-id} with an actual user ID
+GET {{SIGID.API_HostAddress}}/api/auth/users/{user-id}
+Accept: application/json
+
+###
+
+### 5. GET USER BY EMAIL - Get a specific user by email
+GET {{SIGID.API_HostAddress}}/api/auth/users/email/admin@sigid.com
+Accept: application/json
+
+###
 
 ###
