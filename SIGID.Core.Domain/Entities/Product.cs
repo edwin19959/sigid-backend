@@ -11,9 +11,7 @@ namespace SIGID.Core.Domain.Entities
         public string Id { get; set; }
         public string Name { get; set; }
         public int StockMin { get; set; }
-        //current stock
         public int CurrStock { get; set; }
         public string Status { get; set; }
-
     }
 }
