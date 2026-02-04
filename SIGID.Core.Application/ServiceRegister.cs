@@ -9,12 +9,12 @@ namespace SIGID.Core.Application
     {
         public static void AddApplicationLayer(this IServiceCollection services)
         {
-            // Inject automapper
+            // AutoMapper
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
-            
+
             // Services
             services.AddTransient<IUserService, UserService>();
-            services.AddTransient<IDashboardService, DashboardService>();
+            services.AddTransient<IInventoryService, InventoryService>();
         }
     }
 }

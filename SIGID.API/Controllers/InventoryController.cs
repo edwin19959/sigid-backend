@@ -3,37 +3,37 @@ using SIGID.Core.Application.Interfaces.Services;
 
 namespace SIGID.API.Controllers
 {
-    [Route("api/dashboard")]
+    [Route("api/inventory")]
     [ApiController]
-    public class DashboardController : ControllerBase
+    public class InventoryController : ControllerBase
     {
-        private readonly IDashboardService _dashboardService;
+        private readonly IInventoryService _inventoryService;
 
-        public DashboardController(IDashboardService dashboardService)
+        public InventoryController(IInventoryService inventoryService)
         {
-            _dashboardService = dashboardService;
+            _inventoryService = inventoryService;
         }
 
         [HttpGet("stats")]
-        public async Task<IActionResult> GetDashboardStats()
+        public async Task<IActionResult> GetInventoryStats()
         {
             try
             {
-                var stats = await _dashboardService.GetDashboardStatsAsync();
+                var stats = await _inventoryService.GetInventoryStatsAsync();
                 return Ok(new { success = true, data = stats, message = "Estadísticas obtenidas correctamente" });
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { success = false, message = "Error al obtener las estadísticas del dashboard", error = ex.Message });
+                return StatusCode(500, new { success = false, message = "Error al obtener las estadísticas", error = ex.Message });
             }
         }
 
-        [HttpGet("productos-stock-bajo")]
-        public async Task<IActionResult> GetProductosStockBajo()
+        [HttpGet("low-stock")]
+        public async Task<IActionResult> GetLowStockProducts()
         {
             try
             {
-                var productos = await _dashboardService.GetProductosStockBajoAsync();
+                var productos = await _inventoryService.GetLowStockProductsAsync();
                 return Ok(new { success = true, data = productos, count = productos.Count, message = productos.Count > 0 ? "Productos con stock bajo obtenidos correctamente" : "No hay productos con stock bajo en este momento" });
             }
             catch (Exception ex)
