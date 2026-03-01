@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SIGID.Core.Application.Interfaces.Services;
 using SIGID.Infrastructure.Persistence.Repositories;
+using SIGID.Infrastructure.Persistence.Services;
 
 namespace SIGID.Infrastructure.Persistence
 {
@@ -13,9 +14,12 @@ namespace SIGID.Infrastructure.Persistence
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(config.GetConnectionString("DefaultConnection"),
                 m => m.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
-            
-            // Registrar repositorio
+
             services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<ISupplierService, SupplierService>();
+            services.AddTransient<IPurchaseService, PurchaseService>();
+            services.AddTransient<ISaleService, SaleService>();
         }
     }
 }
