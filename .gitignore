@@ -1,29 +1,13 @@
-## .NET
+﻿# Visual Studio
+.vs/
+
+# Build outputs
 bin/
 obj/
+
+# User-specific files
 *.user
 *.suo
-*.userosscache
-*.userprefs
-**/.vs/
-**/.vscode/
-**/packages/
-**/TestResults/
 
-## Visual Studio
-.vs/
-*.swp
-*.sln.docstates
-
-## Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-build/
-bld/
-[Bb]in/
-[Oo]bj/
+# Local settings (no subir secretos)
 appsettings.Development.json

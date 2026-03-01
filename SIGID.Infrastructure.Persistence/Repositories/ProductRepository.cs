@@ -1,6 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using SIGID.Core.Application.Interfaces.Services;
 using SIGID.Core.Domain.Entities;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace SIGID.Infrastructure.Persistence.Repositories
 {
@@ -20,8 +23,7 @@ namespace SIGID.Infrastructure.Persistence.Repositories
 
         public async Task<int> GetTotalStockValueAsync()
         {
-            var products = await _context.Products.ToListAsync();
-            return (int)products.Sum(p => p.Price * p.CurrStock);
+            return await _context.Products.SumAsync(p => p.CurrStock);
         }
 
         public async Task<int> GetLowStockCountAsync()
