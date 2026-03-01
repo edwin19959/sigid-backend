@@ -1,19 +1,29 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿@'
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using SIGID.Core.Application.Interfaces.Services;
-using SIGID.Core.Application.Services;
-using System.Reflection;
+using SIGID.Infrastructure.Persistence.Repositories;
+using SIGID.Infrastructure.Persistence.Services;
 
-namespace SIGID.Core.Application
+namespace SIGID.Infrastructure.Persistence
 {
-    public static class ServiceRegister
+    public static class ServicesRegister
     {
-        public static void AddApplicationLayer(this IServiceCollection services)
+        public static void AddPersistenceLayer(this IServiceCollection services, IConfiguration config)
         {
-            //inject automapper
-            services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(config.GetConnectionString("DefaultConnection"),
+                m => m.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
 
-            //services
-            services.AddScoped<IUserService, UserService>();
+            // Repositorios
+            services.AddTransient<IProductRepository, ProductRepository>();
+
+            // Servicios
+            services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<ISupplierService, SupplierService>();
+            services.AddTransient<IPurchaseService, PurchaseService>();
+            services.AddTransient<ISaleService, SaleService>();
         }
     }
 }

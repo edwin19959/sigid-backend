@@ -8,12 +8,18 @@ namespace SIGID.Infrastructure.Persistence
     {
         public static void AddPersistenceLayer(this IServiceCollection services, IConfiguration config)
         {
-            //inject 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(config.GetConnectionString("DefaultConnection"),
                 m => m.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
 
-            //repositories pending include
+            // Repositorios
+            services.AddTransient<IProductRepository, ProductRepository>();
+
+            // Servicios
+            services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<ISupplierService, SupplierService>();
+            services.AddTransient<IPurchaseService, PurchaseService>();
+            services.AddTransient<ISaleService, SaleService>();
         }
     }
 }

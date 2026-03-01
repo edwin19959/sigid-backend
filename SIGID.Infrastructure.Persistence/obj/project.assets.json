@@ -4112,23 +4112,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\edelacruz\\.nuget\\packages\\": {},
+    "C:\\Users\\edwin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\edelacruz\\Source\\Repos\\SIGID\\SIGID.Infrastructure.Persistence\\SIGID.Infrastructure.Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\edwin\\OneDrive\\Escritorio\\PROYECTO FINAL ITLA -2026\\SIGID\\sigid\\SIGID.Infrastructure.Persistence\\SIGID.Infrastructure.Persistence.csproj",
       "projectName": "SIGID.Infrastructure.Persistence",
-      "projectPath": "C:\\Users\\edelacruz\\Source\\Repos\\SIGID\\SIGID.Infrastructure.Persistence\\SIGID.Infrastructure.Persistence.csproj",
-      "packagesPath": "C:\\Users\\edelacruz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\edelacruz\\Source\\Repos\\SIGID\\SIGID.Infrastructure.Persistence\\obj\\",
+      "projectPath": "C:\\Users\\edwin\\OneDrive\\Escritorio\\PROYECTO FINAL ITLA -2026\\SIGID\\sigid\\SIGID.Infrastructure.Persistence\\SIGID.Infrastructure.Persistence.csproj",
+      "packagesPath": "C:\\Users\\edwin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\edwin\\OneDrive\\Escritorio\\PROYECTO FINAL ITLA -2026\\SIGID\\sigid\\SIGID.Infrastructure.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\edelacruz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\edwin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4137,14 +4137,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\edelacruz\\Source\\Repos\\SIGID\\SIGID.Core.Application\\SIGID.Core.Application.csproj": {
-              "projectPath": "C:\\Users\\edelacruz\\Source\\Repos\\SIGID\\SIGID.Core.Application\\SIGID.Core.Application.csproj"
+            "C:\\Users\\edwin\\OneDrive\\Escritorio\\PROYECTO FINAL ITLA -2026\\SIGID\\sigid\\SIGID.Core.Application\\SIGID.Core.Application.csproj": {
+              "projectPath": "C:\\Users\\edwin\\OneDrive\\Escritorio\\PROYECTO FINAL ITLA -2026\\SIGID\\sigid\\SIGID.Core.Application\\SIGID.Core.Application.csproj"
             }
           }
         }
@@ -4159,7 +4160,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -4196,7 +4197,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
